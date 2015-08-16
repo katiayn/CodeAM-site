@@ -1,0 +1,91 @@
+$sp-white:          #FFFFFF
+$sp-white-2:        #FBFBFB
+$sp-red-1:          #CF1142
+$sp-red-2:          #D81A4B
+$sp-red-3:          #ED2F60
+$sp-red-4:          #CA1041
+$sp-red-5:          #A20D34
+$sp-red-6:          #820A2A
+$sp-blue-1:         #00294F
+$sp-grey-1:         #222222
+$sp-grey-2:         #EEEEEE
+$sp-grey-3:         #B9B9B9
+$sp-grey-4:         #C3C3C3
+$sp-black:          #000000
+$sp-error:          #A94442
+$sp-success:        #5F9668
+
+
+
+@font-face
+  font-family: 'Open Sans'
+  font-style: normal
+  font-weight: 300
+  src: url("../fonts/OpenSans-Regular.ttf")
+  src: url("../fonts/OpenSans-Regular.woff")
+
+@font-face
+  font-family: 'Open Sans Light'
+  font-style: normal
+  font-weight: 300
+  src: url("../fonts/OpenSans-Light.ttf")
+
+@font-face
+  font-family: 'Open Sans Bold'
+  font-style: normal
+  font-weight: 300
+  src: url("../fonts/OpenSans-Bold.ttf")
+
+
+$sp-open-sans:    'Open Sans', sans-serif
+$sp-open-sans-light:    'Open Sans Light', sans-serif
+$sp-open-sans-bold:    'Open Sans Bold', sans-serif
+
+$sp-text-super-large: 60px
+$sp-text-larger: 36px
+$sp-text-large: 20px
+$sp-text-mobile-large: 24px
+$sp-text-medium: 16px
+$sp-text-small: 14px
+$sp-text-smallest: 12px
+
+=sp-headline
+  color: $sp-white
+  font-size: $sp-text-larger
+  letter-spacing: 2px
+  text-transform: uppercase
+  line-height: 44px
+  display: block
+
+=sp-subheadline
+  color: $sp-white
+  font-size: $sp-text-large
+  letter-spacing: 2px
+  line-height: 36px
+  display: block
+
+=sp-button($background-color, $border-color, $text-color)
+  background-color: $background-color
+  border: 1px solid $border-color
+  color: $text-color
+  letter-spacing: 1px
+  border-radius: 5px
+
+=sp-standart-button
+  +sp-button($sp-red-4, $sp-red-4, $sp-white)
+  &:hover
+    +sp-button($sp-red-5, $sp-red-5, $sp-white)
+  &:active
+    +sp-button($sp-red-6, $sp-red-6, $sp-white)
+
+
+=sp-gradient($solor-top, $color-bottom)
+  background: $solor-top /* Old browsers */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+  background: -moz-linear-gradient(top,  $solor-top 0%, $color-bottom 100%) /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$solor-top), color-stop(100%,$color-bottom)) /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $solor-top 0%,$color-bottom 100%) /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $solor-top 0%,$color-bottom 100%) /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $solor-top 0%,$color-bottom 100%) /* IE10+ */
+  background: linear-gradient(to bottom,  $solor-top 0%,$color-bottom 100%) /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#FFFFFF',GradientType=0 ) /* IE6-8 */

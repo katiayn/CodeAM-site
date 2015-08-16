@@ -1,0 +1,55 @@
+#header
+  position: relative
+  .logo
+    width: 150px
+    position: absolute
+    cursor: pointer
+    left: 43px
+    top: 25px
+
+  .header-parallax
+    background-image: url("/images/headerimage.jpg")
+    background-repeat: no-repeat
+    background-size: 100%
+    background-attachment: fixed
+    width: 100%
+    padding: 11vw 0
+    display: inline-block
+
+    h1
+      +sp-headline
+      strong
+        display: block
+
+  .arrow-down
+    width: 39px
+    position: absolute
+    bottom: 20px
+    left: 50%
+    margin-left: -19px
+    cursor: pointer
+
+  &.regularHeader
+    .header-parallax
+      padding: 61px 0
+
+
+@media screen and (max-width: 767px)
+  #header
+    .logo
+      width: 87px
+      left: 23px
+      top: 12px
+
+    .header-parallax
+      background-size: 300%
+      background-position: top center
+      padding: 22vw 0
+      h1
+        margin-top: 6px
+        font-size: $sp-text-mobile-large
+        line-height: 30px
+
+    &.regularHeader
+      .header-parallax
+        padding: 28px 0

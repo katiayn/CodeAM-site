@@ -1,0 +1,260 @@
+#home
+  background: $sp-white
+
+  .intro-box
+    padding: 50px 0
+    h1
+      +sp-headline
+      color: $sp-grey-1
+      margin: 0
+      strong
+        font-family: $sp-open-sans-bold
+    h2
+      margin: 0
+      +sp-subheadline
+      color: $sp-grey-1
+
+    .instructions-wrapper
+      margin: 110px auto
+      display: table
+      float: none
+      max-width: 1200px
+      width: 100%
+      .monitor
+        display: inline-block
+
+      .instructions
+        padding-top: 10px
+        .instruction
+          .order
+            font-size: $sp-text-super-large
+            width: 10%
+            font-family: $sp-open-sans-light
+          .text
+            color: $sp-grey-1
+            display: inline-block
+            line-height: 20px
+            margin-top: 20px
+            vertical-align: top
+            margin-left: 20px
+            width: 81%
+            strong
+              +sp-subheadline
+              color: $sp-grey-1
+            div
+              font-family: $sp-open-sans
+              font-size: $sp-text-medium
+
+    button
+      +sp-standart-button
+      margin: 20px 0 0 0
+      border-radius: 5px
+      font-size: $sp-text-medium
+      font-family: $sp-open-sans-bold
+      width: 300px
+      height: 60px
+
+  .part-service-box
+    display: block
+    padding: 100px 0 0 0
+    +sp-gradient($sp-grey-2, $sp-white)
+
+    h1
+      +sp-headline
+      color: $sp-grey-1
+      margin: 0
+      strong
+        font-family: $sp-open-sans-bold
+    h2
+      margin: 0
+      +sp-subheadline
+      color: $sp-grey-1
+
+    .part-service-wrapper
+      margin: 110px auto 0 auto
+      display: table
+      float: none
+      max-width: 1200px
+      width: 100%
+      .service-monitor
+        display: inline-block
+      .service-description
+        margin-bottom: 40px
+        h2
+          color: $sp-red-4
+        ul
+          font-family: $sp-open-sans
+          padding-left: 20px
+          li
+            font-size: 9px
+            span
+              font-size: $sp-text-medium
+              vertical-align: sub
+              line-height: 28px
+              padding-left: 6px
+
+    button
+      +sp-standart-button
+      margin: 20px 0 0 0
+      border-radius: 5px
+      font-size: $sp-text-medium
+      font-family: $sp-open-sans-bold
+      width: 300px
+      height: 60px
+
+  .teaser-box
+    background: $sp-blue-1
+    padding: 110px 0 30px 0
+    display: block
+    margin-bottom: 50px
+    h1
+      +sp-headline
+      margin: 0
+    h2
+      +sp-subheadline
+      margin: 0
+    .teasers
+      display: table
+      float: none
+      max-width: 1200px
+      margin: 50px auto
+      .teaser
+        display: inline-block
+        .browser
+          width: 90%
+          margin-bottom: 20px
+        strong, div
+          color: $sp-white
+          padding: 0 70px
+
+    .survey-area
+      margin: 100px 0
+
+      .survey-button
+        +sp-button($sp-white, $sp-white, $sp-black)
+        width: 300px
+        height: 60px
+        margin: 40px auto 0 auto
+        display: block
+        line-height: 55px
+        font-weight: bold
+        &:hover
+          +sp-button($sp-grey-2, $sp-grey-2, $sp-black)
+        &:active
+          +sp-button($sp-grey-3, $sp-grey-3, $sp-black)
+
+
+  .email-box
+    padding: 100px 0
+
+    h1
+      +sp-headline
+      color: $sp-grey-1
+      margin: 0
+      strong
+        font-family: $sp-open-sans-bold
+    h2
+      +sp-subheadline
+      color: $sp-grey-1
+      margin: 0
+      line-height: 30px
+
+    .contact-button
+      +sp-standart-button
+      border-radius: 5px
+      width: 300px
+      height: 60px
+      margin: 40px auto 0 auto
+      display: block
+      font-weight: bold
+
+
+@media screen and (max-width: 767px)
+  #home
+    .intro-box, .part-service-box, .teaser-box, .email-box
+      h1
+        font-size: $sp-text-mobile-large
+        line-height: 28px
+        padding: 0 12px
+        text-align: center
+      h2
+        margin-top: 15px
+        line-height: $sp-text-mobile-large
+        text-align: center
+    .intro-box
+      padding-bottom: 30px
+      .instructions-wrapper
+        margin: 40px auto 0 auto
+        padding: 0
+        .monitor
+          padding-left: 20px
+        .instructions
+          width: 100%
+          padding: 0 8px
+          .instruction
+            padding-left: 12px
+            .order
+              display: inline-block
+              width: 10%
+              vertical-align: top
+            .text
+              margin-top: 20px
+              line-height: 20px
+              width: 73%
+              strong
+                font-size: $sp-text-medium
+                line-height: 24px
+              div
+                font-size: $sp-text-medium
+          button
+            width: 100%
+    .part-service-box
+      padding: 50px 10px 0 10px
+      h2
+        margin-top: 20px
+      .part-service-wrapper
+        margin: 30px auto 40px auto
+        .service-description
+          padding: 0
+          margin-bottom: 0
+          h2, h1, p
+            padding-left: 30px
+            text-align: left
+          ul
+            padding-left: 40px
+            margin-bottom: 15px
+            li
+              padding: 10px 0
+              line-height: 25px
+              span
+                line-height: 24px
+                display: inline-block
+                vertical-align: top
+        button
+          display: block
+          width: 100%
+          margin: 0 auto
+    .teaser-box
+      margin-bottom: 0
+      padding: 50px 10px 30px 10px
+      h2
+        margin: 20px 10px
+      .teasers
+        margin: 0 auto
+        .teaser
+          padding: 0
+          margin-bottom: 30px
+          .browser
+            width: 100%
+          strong, div
+            padding: 0 10px
+      .survey-area
+        margin: 10px 0
+        .survey-button
+          width: 100%
+
+    .email-box
+      padding: 50px 10px 30px 10px
+
+      .contact-button
+        width: 100%

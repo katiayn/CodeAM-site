@@ -1,0 +1,24 @@
+<div id="contact-form">
+    <form name="contactForm" novalidate>
+        <label>Prefixo*:</label>
+        <div class="salutations">
+            <span><input type="radio" ng-model="contact.gender" value="male" required>Mr.</span>
+            <span><input type="radio" ng-model="contact.gender" value="female" required>Mrs.</span>
+        </div>
+        <div class="text-danger" ng-show="contactForm.$submitted  && !contact.gender">Please choose a form of adress</div>
+        <label>Nome*:</label>
+        <input class="form-control" type="text" ng-model="contact.name" placeholder="Enter first name, name..." required>
+        <div class="text-danger text-right" ng-show="contactForm.$submitted  && !contact.name">Please enter your name</div>
+        <label>Empresa*:</label>
+        <input class="form-control" ng-model="contact.company" type="text" placeholder="Enter company name..." required>
+        <div class="text-danger text-right" ng-show="contactForm.$submitted  && !contact.company">Please enter company name</div>
+        <label>Email*:</label>
+        <input class="form-control" ng-model="contact.email" type="email" name="contactEmail" placeholder="Enter email address..." required>
+        <div class="text-danger text-right" ng-show="contactForm.$submitted  && contactForm.contactEmail.$error.required">Please enter your email adress</div>
+        <div class="text-danger text-right" ng-show="contactForm.$submitted  && contactForm.contactEmail.$error.email">This is not a valid email address.</div>
+        <label>Telefone:</label>
+        <input class="form-control" type="text" ng-model="contact.phone" placeholder="Enter phone...">
+        <button ng-click="sendContactForm(contact)" ng-class="{'disabled': sendDisabled}">Send</button>
+        <p class="text-right">*Campos obrigatórios</p>
+    </form>
+</div>

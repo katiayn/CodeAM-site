@@ -1,0 +1,36 @@
+footer
+  position: relative
+  width: 100%
+  margin: 0
+  padding: 10px 30px 5px 0
+  border-top: 1px solid $sp-grey-3
+  ul
+    text-align: right
+    margin-right: 0
+
+    li
+      font-family: $sp-open-sans
+      display: inline-block
+      color: $sp-grey-1
+      font-size: 12px
+
+      margin: 0 3px
+
+      &+li:before
+        content: '\2022'�
+        font-size: 14px
+        vertical-align: -1px
+        color: $sp-red-4
+        margin-right: 7px
+
+      a
+        font-size: 12px
+
+        &:hover
+          text-decoration: underline
+        &.active
+          color: $sp-grey-1
+
+@media screen and (max-width: 767px)
+  footer
+    margin-right: 10px
