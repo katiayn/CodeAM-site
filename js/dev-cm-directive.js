@@ -1,4 +1,4 @@
-var directives = angular.module('sp.directives', []);
+var directives = angular.module('codeAMDirectives', []);
     directives.filter('tel', function () {
         return function (tel) {
             if (!tel) { return ''; }

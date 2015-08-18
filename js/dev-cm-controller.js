@@ -1,12 +1,11 @@
 var codeAMSite = angular.module('codeAMSite', [
-    'sp.services',
-    'sp.directives',
+    'codeAMServices',
+    'codeAMDirectives',
     'ui.router',
     'toastr']);
 
 codeAMSite.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$compileProvider','$httpProvider', 'toastrConfig',
     function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider, $httpProvider, toastrConfig) {
-        $compileProvider.debugInfoEnabled(environment == 'production' ? false : true);
         $stateProvider
             .state('home', {
                 url: '/',
@@ -28,7 +27,7 @@ codeAMSite.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
         $locationProvider.html5Mode({
             enabled: true,
             hashPrefix: '!',
-            requireBase: false
+            requireBase: true
         });
     }]);
 

@@ -1,1 +1,1 @@
-var services = angular.module('sp.services', []);
+var services = angular.module('codeAMServices', []);
