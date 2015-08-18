@@ -21,12 +21,11 @@
     </script>
     <script type="text/javascript" src="js/lib/angular-toastr.tpls.min.js"></script>
     <title>Bem Vindo - CodeAM</title>
-    <base href="/site/">
-    <!-- base href="/"-->
+    <base href="/site">
 </head>
 <body>
 <div class="outter-wrapper">
-    <section id="header" ng-class="{'regularHeader' : !onLandingPage}" ng-controller="HeaderCtrl" ng-include="'/partials/header.html'"></section>
+    <section id="header" ng-class="{'regularHeader' : !onLandingPage}" ng-controller="HeaderCtrl" ng-include="'/site/partials/header.html'"></section>
     <div class="content" ui-view></div>
 </div>
 </body>

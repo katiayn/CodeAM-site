@@ -15,7 +15,7 @@
   font-weight: 300;
   src: url("../fonts/OpenSans-Bold.ttf"); }
 #home .intro-box {
-  background-image: url("/images/headerimage.jpg");
+  background-image: url("/site/images/headerimage.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -173,6 +173,7 @@
     text-transform: uppercase;
     line-height: 44px;
     display: block;
+    color: #000000;
     margin: 0; }
   #home .teaser-box h2 {
     color: #FFFFFF;

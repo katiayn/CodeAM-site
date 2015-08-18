@@ -9,12 +9,12 @@ codeAMSite.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: '/partials/screen_home.html',
+                templateUrl: '/site/partials/screen_home.html',
                 controller: 'HomeCtrl'
             })
             .state('contact-form', {
                 url: '/contact-form',
-                templateUrl: '/partials/screen_contact_form.html',
+                templateUrl: '/site/partials/screen_contact_form.html',
                 controller: 'ContactFormCtrl'
             });
         $urlRouterProvider.otherwise("/");
