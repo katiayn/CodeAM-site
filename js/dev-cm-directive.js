@@ -1,10 +1,5 @@
 var directives = angular.module('codeAMDirectives', []);
-    directives.filter('tel', function () {
-        return function (tel) {
-            if (!tel) { return ''; }
-            return tel.slice(0, 2) + '-' + tel.slice(2, 5) + '-' + tel.slice(5, 8) + '-' + tel.slice(8);
-        };
-    }).directive('parallax', ['$window', function($window) {
+    directives.directive('parallax', ['$window', function($window) {
         return {
             restrict: 'A',
             scope: {
@@ -53,3 +48,23 @@ var directives = angular.module('codeAMDirectives', []);
             }  // link function
         };
     }]);
+
+$(".nav li a[href^='#']").on('click', function(e) {
+
+    // prevent default anchor click behavior
+    e.preventDefault();
+
+    // store hash
+    var hash = this.hash;
+
+    // animate
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 300, function(){
+
+        // when done, add hash to url
+        // (default click behaviour)
+        window.location.hash = hash;
+    });
+
+});

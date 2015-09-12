@@ -1,6 +1,6 @@
 #home
   .intro-box
-    background-image: url("/site/images/headerimage.jpg")
+    background-image: url("../../images/headerimage.jpg")
     background-repeat: no-repeat
     background-size: 100%
     background-attachment: fixed
@@ -28,7 +28,7 @@
 
   .apps-box
     display: block
-    padding: 100px 0
+    padding: 80px 0
     +codeam-gradient($codeam-white-2, $codeam-white)
 
     h1
@@ -50,7 +50,7 @@
 
 
   .sites-box
-    padding: 100px 0
+    padding: 80px 0
     background: $codeam-black
 
     h1
@@ -83,7 +83,7 @@
 
   .teaser-box
     +codeam-gradient($codeam-white-2, $codeam-white)
-    padding: 110px 0 30px 0
+    padding: 90px 0 30px 0
     display: block
     margin-bottom: 50px
     h1
@@ -100,16 +100,23 @@
       margin: 50px auto
       .teaser
         display: inline-block
-        .browser
-          width: 90%
-          margin-bottom: 20px
-        strong, div
-          color: $codeam-white
-          padding: 0 70px
+        text-align: center
+        .teaser-box
+          border: 2px solid $codeam-blue-1
+          border-radius: 30px
+          box-shadow: 0 0 11px $codeam-black
+          .teaser-img
+            width: 50%
+            margin-bottom: 20px
+          strong
+            color: $codeam-black
+            font-size: 22px
+            display: block
+            margin: 10px 0
 
   .software-box
-    background: $codeam-blue-1
-    padding: 100px 0
+    background: $codeam-green
+    padding: 80px 0
 
     h1
       +codeam-headline
@@ -128,8 +135,42 @@
       font-size: 160px
       display: block
 
+  .equipe-box
+    background: $codeam-blue-1
+    padding: 80px 0
+    width: 100%
+    display: inline-block
+    h1
+      +codeam-headline
+      margin: 0
+      strong
+        font-family: $codeam-open-sans-bold
+
+    .membros
+      padding: 0 10%
+      display: block
+      .membro
+        margin: 50px 0
+        .membro-foto
+          border-radius: 90px
+          border: 5px solid $codeam-white
+          width: 125px
+          height: 125px
+
+        .membro-nome
+          font-family: $codeam-open-sans-bold
+          color: $codeam-white
+          font-size: $codeam-text-medium
+          margin: 10px 0
+
+        .membro-descricao
+          color: $codeam-white
+          width: 50%
+          margin: 0 auto
+          font-size: $codeam-text-small
+
   .contato-box
-    padding: 100px 0
+    padding: 80px 0
     background: $codeam-red
 
     h1
@@ -232,7 +273,7 @@
           .teaser
             padding: 0
             margin-bottom: 30px
-            .browser
+            .teaser-img
               width: 100%
             strong, div
               padding: 0 10px

@@ -15,7 +15,7 @@
   font-weight: 300;
   src: url("../fonts/OpenSans-Bold.ttf"); }
 #home .intro-box {
-  background-image: url("/site/images/headerimage.jpg");
+  background-image: url("../../images/headerimage.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -27,7 +27,7 @@
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 44px;
+    line-height: 34px;
     display: block;
     margin: 0; }
     #home .intro-box h1 strong {
@@ -66,7 +66,7 @@
       border-radius: 5px; }
 #home .apps-box {
   display: block;
-  padding: 100px 0;
+  padding: 80px 0;
   background: #DEDEDE;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: -moz-linear-gradient(top, #DEDEDE 0%, #FFFFFF 100%);
@@ -81,7 +81,7 @@
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 44px;
+    line-height: 34px;
     display: block;
     color: #000000;
     margin: 0; }
@@ -101,14 +101,14 @@
     font-size: 160px;
     display: block; }
 #home .sites-box {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #000000; }
   #home .sites-box h1 {
     color: #FFFFFF;
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 44px;
+    line-height: 34px;
     display: block;
     color: #FFFFFF;
     margin: 0; }
@@ -163,7 +163,7 @@
   background: -ms-linear-gradient(top, #DEDEDE 0%, #FFFFFF 100%);
   background: linear-gradient(to bottom, #DEDEDE 0%, #FFFFFF 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#FFFFFF',GradientType=0 );
-  padding: 110px 0 30px 0;
+  padding: 90px 0 30px 0;
   display: block;
   margin-bottom: 50px; }
   #home .teaser-box h1 {
@@ -171,7 +171,7 @@
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 44px;
+    line-height: 34px;
     display: block;
     color: #000000;
     margin: 0; }
@@ -188,22 +188,29 @@
     max-width: 1200px;
     margin: 50px auto; }
     #home .teaser-box .teasers .teaser {
-      display: inline-block; }
-      #home .teaser-box .teasers .teaser .browser {
-        width: 90%;
-        margin-bottom: 20px; }
-      #home .teaser-box .teasers .teaser strong, #home .teaser-box .teasers .teaser div {
-        color: #FFFFFF;
-        padding: 0 70px; }
+      display: inline-block;
+      text-align: center; }
+      #home .teaser-box .teasers .teaser .teaser-box {
+        border: 2px solid #1565C0;
+        border-radius: 30px;
+        box-shadow: 0 0 11px #000000; }
+        #home .teaser-box .teasers .teaser .teaser-box .teaser-img {
+          width: 50%;
+          margin-bottom: 20px; }
+        #home .teaser-box .teasers .teaser .teaser-box strong {
+          color: #000000;
+          font-size: 22px;
+          display: block;
+          margin: 10px 0; }
 #home .software-box {
-  background: #1565C0;
-  padding: 100px 0; }
+  background: #558B2F;
+  padding: 80px 0; }
   #home .software-box h1 {
     color: #FFFFFF;
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 44px;
+    line-height: 34px;
     display: block;
     margin: 0; }
     #home .software-box h1 strong {
@@ -222,15 +229,50 @@
     margin: 20px 0;
     font-size: 160px;
     display: block; }
+#home .equipe-box {
+  background: #1565C0;
+  padding: 80px 0;
+  width: 100%;
+  display: inline-block; }
+  #home .equipe-box h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 34px;
+    display: block;
+    margin: 0; }
+    #home .equipe-box h1 strong {
+      font-family: "Open Sans Bold", sans-serif; }
+  #home .equipe-box .membros {
+    padding: 0 10%;
+    display: block; }
+    #home .equipe-box .membros .membro {
+      margin: 50px 0; }
+      #home .equipe-box .membros .membro .membro-foto {
+        border-radius: 90px;
+        border: 5px solid #FFFFFF;
+        width: 125px;
+        height: 125px; }
+      #home .equipe-box .membros .membro .membro-nome {
+        font-family: "Open Sans Bold", sans-serif;
+        color: #FFFFFF;
+        font-size: 16px;
+        margin: 10px 0; }
+      #home .equipe-box .membros .membro .membro-descricao {
+        color: #FFFFFF;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 14px; }
 #home .contato-box {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #F44336; }
   #home .contato-box h1 {
     color: #FFFFFF;
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 44px;
+    line-height: 34px;
     display: block;
     margin: 0; }
     #home .contato-box h1 strong {
@@ -336,7 +378,7 @@
       #home #home .teaser-box .teasers .teaser {
         padding: 0;
         margin-bottom: 30px; }
-        #home #home .teaser-box .teasers .teaser .browser {
+        #home #home .teaser-box .teasers .teaser .teaser-img {
           width: 100%; }
         #home #home .teaser-box .teasers .teaser strong, #home #home .teaser-box .teasers .teaser div {
           padding: 0 10px; }
@@ -351,13 +393,21 @@
 
 #contact-form {
   padding: 52px 235px;
-  background: #FFFFFF; }
+  background: #DEDEDE;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #DEDEDE 0%, #FFFFFF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #DEDEDE), color-stop(100%, #FFFFFF));
+  background: -webkit-linear-gradient(top, #DEDEDE 0%, #FFFFFF 100%);
+  background: -o-linear-gradient(top, #DEDEDE 0%, #FFFFFF 100%);
+  background: -ms-linear-gradient(top, #DEDEDE 0%, #FFFFFF 100%);
+  background: linear-gradient(to bottom, #DEDEDE 0%, #FFFFFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#FFFFFF',GradientType=0 ); }
   #contact-form h1 {
     color: #FFFFFF;
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 44px;
+    line-height: 34px;
     display: block;
     color: #333333;
     letter-spacing: 0px;
@@ -375,8 +425,11 @@
     color: #333333;
     margin-bottom: 0; }
   #contact-form form {
-    width: 380px;
-    padding: 33px 0; }
+    width: 500px;
+    margin: 50px auto;
+    background: #FFFFFF;
+    border: 2px solid #1565C0;
+    padding: 20px; }
     #contact-form form .salutations {
       margin-bottom: 20px; }
       #contact-form form .salutations span {
@@ -397,9 +450,12 @@
       margin-bottom: 9px; }
       #contact-form form label:first-of-type {
         margin-top: 0; }
-    #contact-form form input[type="text"], #contact-form form input[type="email"] {
+    #contact-form form input[type="text"], #contact-form form input[type="email"], #contact-form form textarea {
       border: 1px solid #222222;
       height: 45px; }
+    #contact-form form textarea {
+      max-width: 100%;
+      max-height: 300px; }
     #contact-form form button {
       background-color: #FFFFFF;
       border: 1px solid #FFFFFF;
@@ -407,6 +463,8 @@
       letter-spacing: 1px;
       border-radius: 5px;
       font-weight: bold;
+      background-color: #1565C0;
+      color: #FFFFFF;
       width: 100%;
       height: 59px;
       margin: 45px 0 0 0; }
@@ -445,7 +503,8 @@
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
   body .outter-wrapper {
     width: 100%;
     margin: 0 auto;

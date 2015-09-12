@@ -9,12 +9,22 @@ codeAMSite.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: '/site/partials/screen_home.html',
+                templateUrl: rootPath + 'partials/screen_home.html',
+                resolve: {
+                    prepareData: function($rootScope) {
+                        $rootScope.enableHeader = true;
+                    }
+                },
                 controller: 'HomeCtrl'
             })
             .state('contact-form', {
                 url: '/contact-form',
-                templateUrl: '/site/partials/screen_contact_form.html',
+                templateUrl: rootPath + 'partials/screen_contact_form.html',
+                resolve: {
+                    prepareData: function($rootScope) {
+                        $rootScope.enableHeader = false;
+                    }
+                },
                 controller: 'ContactFormCtrl'
             });
         $urlRouterProvider.otherwise("/");
@@ -27,19 +37,12 @@ codeAMSite.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
         $locationProvider.html5Mode({
             enabled: true,
             hashPrefix: '!',
-            requireBase: true
+            requireBase: false
         });
     }]);
 
-codeAMSite.run(['$rootScope', '$state',
-    function($rootScope, $state) {
-        // global object cache
-        $rootScope.objectCache = [];
-
-        //call $rootScope.showPageLoading(true); whenever you want the full page loading indicator
-        $rootScope.showPageLoading = function(state) {
-            $rootScope.loading = state;
-        };
+codeAMSite.run(['$rootScope',
+    function($rootScope) {
     }]);
 
 codeAMSite.controller('HeaderCtrl', ['$scope',function($scope) {

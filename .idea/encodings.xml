@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/partials/footer.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/partials/header.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partials/screen_contact_form.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/partials/screen_home.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/styles/lib/font-awesome.min.css" charset="US-ASCII" />
   </component>

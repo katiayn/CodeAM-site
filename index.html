@@ -11,21 +11,25 @@
     <script type="text/javascript">
         document.write('\<link rel="stylesheet" href="styles/css/styles.css?force=' + Math.floor(Math.random()*9999999) + '" />');
     </script>
+    <script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lib/angular.min.js"></script>
     <script type="text/javascript" src="js/lib/angular-locale_en-us.js"></script>
     <script type="text/javascript" src="js/lib/angular-ui-router.min.js"></script>
     <script type="text/javascript">
+        // rootPath = "/site/";
+        rootPath = "/";
         document.write('\<script type="text/javascript" src="js/dev-cm-directive.js?force=' + Math.floor(Math.random()*9999999) + '"\><\/script>');
         document.write('\<script type="text/javascript" src="js/dev-cm-service.js?force=' + Math.floor(Math.random()*9999999) + '"\><\/script>');
         document.write('\<script type="text/javascript" src="js/dev-cm-controller.js?force=' + Math.floor(Math.random()*9999999) + '"\><\/script>');
     </script>
     <script type="text/javascript" src="js/lib/angular-toastr.tpls.min.js"></script>
     <title>Bem Vindo - CodeAM</title>
-    <base href="/site">
+
 </head>
-<body>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
 <div class="outter-wrapper">
-    <section id="header" ng-class="{'regularHeader' : !onLandingPage}" ng-controller="HeaderCtrl" ng-include="'/site/partials/header.html'"></section>
+    <section id="header" ng-class="{'regularHeader' : !onLandingPage}" ng-controller="HeaderCtrl" ng-include="'partials/header.html'" ng-show="enableHeader"></section>
     <div class="content" ui-view></div>
 </div>
 </body>

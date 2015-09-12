@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'codeam-headline'.
-        on line 11 of ./sass/home.sass, in `codeam-headline'
-        from line 11 of ./sass/home.sass
+        on line 11 of sass/home.sass, in `codeam-headline'
+        from line 11 of sass/home.sass
 
 6:     background-attachment: fixed
 7:     width: 100%
@@ -16,8 +16,8 @@ Error: Undefined mixin 'codeam-headline'.
 16:       margin: 0
 
 Backtrace:
-./sass/home.sass:11:in `codeam-headline'
-./sass/home.sass:11
+sass/home.sass:11:in `codeam-headline'
+sass/home.sass:11
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
@@ -92,4 +92,4 @@ C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'codeam-headline'.\A         on line 11 of ./sass/home.sass, in `codeam-headline'\A         from line 11 of ./sass/home.sass\A \A 6:     background-attachment: fixed\A 7:     width: 100%\A 8:     padding: 11vw 0\A 9:     display: inline-block\A 10:     h1\A 11:       +codeam-headline\A 12:       margin: 0\A 13:       strong\A 14:         font-family: $codeam-open-sans-bold\A 15:     h2\A 16:       margin: 0"; }
+  content: "Error: Undefined mixin 'codeam-headline'.\A         on line 11 of sass/home.sass, in `codeam-headline'\A         from line 11 of sass/home.sass\A \A 6:     background-attachment: fixed\A 7:     width: 100%\A 8:     padding: 11vw 0\A 9:     display: inline-block\A 10:     h1\A 11:       +codeam-headline\A 12:       margin: 0\A 13:       strong\A 14:         font-family: $codeam-open-sans-bold\A 15:     h2\A 16:       margin: 0"; }
